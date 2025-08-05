@@ -12,10 +12,10 @@ import (
 )
 
 type TokenBucket struct {
-	tokens       int
-	capacity     int
-	refillRate   int
-	lastRefillTs time.Time
+	tokens       int //it tell how many tokens are currently in the bucket
+	capacity     int //it tells max tokens that a bucket can hold
+	refillRate   int //how fast tokens are added 
+	lastRefillTs time.Time //last time we added token
 }
 
 func min(a, b int) int {
@@ -47,8 +47,8 @@ func (b *TokenBucket) AllowRequest() bool {
 func main() {
 	bucket := &TokenBucket{
 		tokens:       5,
-		capacity:     3,
-		refillRate:   2,
+		capacity:     5,
+		refillRate:   3,
 		lastRefillTs: time.Now(),
 	}
 

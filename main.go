@@ -62,3 +62,17 @@ func main() {
 		}
 	}
 }
+
+
+/*Output
+Request 1 allowed at 20:20:34.675
+Request 2 allowed at 20:20:34.676
+Request 3 allowed at 20:20:34.676
+Request 4 allowed at 20:20:34.676
+Request 5 allowed at 20:20:34.676
+Request 6 blocked at 20:20:34.676
+Request 7 blocked at 20:20:34.677
+Request 8 blocked at 20:20:34.677
+Request 9 blocked at 20:20:34.677
+Request 10 blocked at 20:20:34.677
+*/

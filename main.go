@@ -1,3 +1,9 @@
+/*This is a sample working of Rate Limiter which show the working of Token Bucket Algorithm
+Where the Algorithm says 
+1. Initialize the token bucket with fixed number of tokens.
+2. For each request remove a token from the bucket.
+3. If there are no tokens left in the bucket  reject the request.
+4. Add tokens to the bucket at a fixed rate.*/
 package main
 
 import (

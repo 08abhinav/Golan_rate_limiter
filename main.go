@@ -16,6 +16,8 @@ func min(a, b int)int{
 	return b
 }
 
+/*This method will check if a request can be allowed and also 
+calculate how many tokens to add */
 func (b *TokenBucket) AllowRequest() bool{
 	now := time.Now()
 	elapsed := now.Sub(b.lastRefillTs).Seconds()
